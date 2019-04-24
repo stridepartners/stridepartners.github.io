@@ -356,14 +356,19 @@ a:focus{
 .navbar-default{
 	background-color:transparent;
 	border-color:transparent;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:5px;
+	border-bottom-width: 0px;
 }
 .navbar-default .navbar-nav>.active>a:after{
 	content:"\2192";
 	display:inline-block;
 	font-style:normal;
 	font-weight:normal;
-	line-height:1;
-	margin-left:10px;
+	border-bottom-width: 0px;
+	/* line-height:1; */
+
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
 
@@ -376,7 +381,9 @@ a:focus{
 .navbar-nav>li>a{
 	padding:5px 15px;
 	font-weight:400;
-	font-style:italic;
+	font-style:bold;
+	margin-right:15px;
+	border-bottom-width: 0px;
 
 	-webkit-transition:all .25s;
 	   -moz-transition:all .25s;
@@ -386,11 +393,23 @@ a:focus{
 }
 .navbar-nav>li>a:hover{
 	padding-left:25px;
+	padding-right:15px;
+	border-bottom-width: 0px;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form{
-	border-color: transparent;
+	border-color: none;
 }
+.navbar-default .navbar-brand{
+padding:5px 15px;
+padding-bottom: 5px;
+font-weight:800;
+font-style:bold;
+color:#fff;
+margin-top:5px;
+border-bottom-width: 0px;
+}
+
 
 
 @media (max-width: 992px) {
@@ -409,7 +428,7 @@ a:focus{
     }
     .navbar-fixed-top {
 		top: 0;
-		border-width: 0 0 1px;
+		border-width: 0 0 1px 1px;
 	}
     .navbar-collapse.collapse {
         display: none!important;
@@ -417,6 +436,7 @@ a:focus{
     .navbar-nav {
         float: none!important;
 		margin-top: 7.5px;
+		margin-right: 7.5px;
 	}
 	.navbar-nav>li {
         float: none;
@@ -435,12 +455,14 @@ a:focus{
 		background:rgba(0,0,0,.5);
 	}
 	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-brand,
 	.navbar-default .navbar-toggle:focus{
 		background-color:transparent;
 	}
 	.navbar-default .navbar-toggle{
 		margin-top: 15px;
 	}
+
 }
 /* @media screen and (min-width: 992px){
 	.navbar-fixed-top{

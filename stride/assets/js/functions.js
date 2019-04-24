@@ -346,10 +346,10 @@ jQuery(document).ready(function($) {
 
 /* Preloder
 -------------------------------------------------------------------*/
-$(window).load(function () {
-    "use strict";
-    $("#loader").fadeOut();
-    $("#preloader").delay(350).fadeOut("slow");
-});
+// $(window).load(function () {
+//     "use strict";
+//     $("#loader").fadeOut();
+//     $("#preloader").delay(350).fadeOut("slow");
+// });
  /* Preloder End
 -------------------------------------------------------------------*/
