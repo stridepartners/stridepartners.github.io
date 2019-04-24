@@ -54,29 +54,29 @@ jQuery(document).ready(function($) {
 
 	/* Time Countdown
 	-------------------------------------------------------------------*/
-	$('#time_countdown').countDown({
-
-        // targetDate: {
-        //     'day': 30,
-        //     'month': 9,
-        //     'year': 2015,
-        //     'hour': 0,
-        //     'min': 0,
-        //     'sec': 0
-        // },
-        // omitWeeks: true
-
-         targetOffset: {
-            'day':      0,
-            'month':    0,
-            'year':     1,
-            'hour':     0,
-            'min':      0,
-            'sec':      3
-		},
-		omitWeeks: true
-
-	    });
+	// $('#time_countdown').countDown({
+	//
+  //       // targetDate: {
+  //       //     'day': 30,
+  //       //     'month': 9,
+  //       //     'year': 2015,
+  //       //     'hour': 0,
+  //       //     'min': 0,
+  //       //     'sec': 0
+  //       // },
+  //       // omitWeeks: true
+	//
+  //        targetOffset: {
+  //           'day':      0,
+  //           'month':    0,
+  //           'year':     1,
+  //           'hour':     0,
+  //           'min':      0,
+  //           'sec':      3
+	// 	},
+	// 	omitWeeks: true
+	//
+	//     });
 
 
 
@@ -231,7 +231,7 @@ jQuery(document).ready(function($) {
 	particlesJS("particles-js", {
 	  "particles": {
 	    "number": {
-	      "value": 80,
+	      "value": 25,
 	      "density": {
 	        "enable": true,
 	        "value_area": 700
@@ -247,7 +247,7 @@ jQuery(document).ready(function($) {
 	        "color": "#000000"
 	      },
 	      "polygon": {
-	        "nb_sides": 5
+	        "nb_sides": 4
 	      },
 	      "image": {
 	        "src": "img/github.svg",
@@ -291,7 +291,7 @@ jQuery(document).ready(function($) {
 	      "out_mode": "out",
 	      "bounce": true,
 	      "attract": {
-	        "enable": true,
+	        "enable": false,
 	        "rotateX": 600,
 	        "rotateY": 1200
 	      }
@@ -329,7 +329,7 @@ jQuery(document).ready(function($) {
 	        "duration": 0.4
 	      },
 	      "push": {
-	        "particles_nb": 3
+	        "particles_nb": 5
 	      },
 	      "remove": {
 	        "particles_nb": 3
