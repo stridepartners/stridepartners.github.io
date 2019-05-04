@@ -3575,9 +3575,10 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1.75em;
 			opacity: 1;
-			padding: 0.35em 1em;
+			padding: 0.35em 1em 0.35em 1em;
 			position: relative;
 			z-index: 1;
+			text-align: center;
 		}
 
 			#banner h2:before, #banner h2:after {
@@ -3595,16 +3596,19 @@ input, select, textarea {
 				height: 2px;
 				position: absolute;
 				width: 100%;
+				text-align: center;
 			}
 
 			#banner h2:before {
 				top: 0;
 				left: 0;
+				text-align: center;
 			}
 
 			#banner h2:after {
 				bottom: 0;
 				right: 0;
+				text-align: center;
 			}
 
 		#banner p {
@@ -3647,12 +3651,12 @@ input, select, textarea {
 			z-index: 1;
 		}
 
-			#banner .more:after {
+			/* #banner .more:after {
 				background-image: url("images/arrow.svg");
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				bottom: 4em;
+				bottom: 0em;
 				content: '';
 				display: block;
 				height: 1.5em;
@@ -3660,7 +3664,7 @@ input, select, textarea {
 				margin: 0 0 0 -0.75em;
 				position: absolute;
 				width: 1.5em;
-			}
+			} */
 
 		#banner:after {
 			pointer-events: none;
@@ -3681,18 +3685,21 @@ input, select, textarea {
 			left: 0;
 			top: 0;
 			opacity: 0;
+			text-align: center;
 		}
 
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 7em 3em 5em 3em ;
+				padding: 7em 3em 7em 0em ;
 				height: auto;
 				min-height: 0;
+				text-align: center;
 			}
 
 				#banner h2 {
 					font-size: 1.25em;
+					text-align: center;
 				}
 
 				#banner br {
@@ -3960,17 +3967,29 @@ input, select, textarea {
 
 	body.is-mobile.landing #page-wrapper {
 		background: none;
+		text-align: center;
 	}
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		/* background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-position: center center;
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg"); */
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		text-align: center;
+	}
+body.is-mobile.landing #particles-js {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  background-color: #00336B;
+		margin-top:0px;
+	  background-repeat: no-repeat;
+		background-size: auto;
+		background-position: 50% 50%;
 	}
 
 	body.is-mobile.landing #footer {
